@@ -1,0 +1,175 @@
+.profile-page {
+  padding: 30px;
+  background: #f4f6fb;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Header ===== */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  background: linear-gradient(135deg, #f8faff, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  margin-bottom: 30px;
+}
+
+.profile-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: #111827;
+}
+
+.role-badge.admin {
+  background: #4f7cff;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* ===== Admin Info Horizontal Layout ===== */
+.profile-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+}
+
+.profile-card h2 {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+.admin-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+.admin-info-item span {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.admin-info-item p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+/* ===== Search ===== */
+.profile-search {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.profile-search::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.profile-search:focus {
+  outline: none;
+  border-color: #4f7cff;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(79, 124, 255, 0.1);
+}
+
+/* ===== Tabs ===== */
+.profile-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-tabs button {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #eef2ff;
+  color: #4f7cff;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.profile-tabs button:hover {
+  background: #dde4ff;
+}
+
+.profile-tabs button.active {
+  background: #4f7cff;
+  color: #fff;
+}
+
+/* ===== Table ===== */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.users-table th,
+.users-table td {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.users-table th {
+  background: #f4f6fb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.users-table tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.users-table tr:last-child {
+  border-bottom: none;
+}
+
+.users-table tr:hover {
+  background: #f9fafb;
+}
+
+/* ===== View profile button ===== */
+.view-btn {
+  background: none;
+  border: none;
+  color: #4f7cff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  text-decoration: underline;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 15px 0;
+  color: #9ca3af;
+}
